@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "excel-merge",
+  "version": "1.0.0",
+  "scripts": {
+    "build": " pkg --targets=macos,win index.js --output excel-merge"
+  },
+  "dependencies": {
+    "glob": "^7.1.6",
+    "xlsx-style": "^0.8.13"
+  }
+}
