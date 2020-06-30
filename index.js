@@ -25,7 +25,6 @@ xlsx.writeFile(
       {
         SheetNames: [],
         Sheets: {},
-        Props: {},
       }
     ),
   "to.xlsx"
