@@ -7,12 +7,7 @@ xlsx.writeFile(
     .map((file) =>
       xlsx.readFile(file, { cellStyles: true, cellNF: true, cellDates: true })
     )
-    .map((workbook) => {
-      console.log(workbook);
-      return workbook;
-    })
     .map((workbook) => ({
-      ...workbook,
       sheet: workbook.Sheets[workbook.SheetNames[0]],
       sheetName: workbook.SheetNames[0],
     }))
